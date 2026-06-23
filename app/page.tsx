@@ -30,6 +30,8 @@ import Header from "./header";
 import { Button } from "@/components/ui/button";
 import GithubIcon from "@/components/icons/github-icon";
 import XIcon from "@/components/icons/x-icon";
+import DeployToRenderButton from "@/components/DeployToRenderButton";
+import { GITHUB_REPO_URL } from "@/lib/render";
 
 export default function Home() {
   const [prompt, setPrompt] = useState("");
@@ -382,10 +384,12 @@ export default function Home() {
               </p>
 
               <div className="mt-8 flex items-center justify-center md:mt-0 md:justify-between md:gap-6">
-                <div className="flex gap-6 md:gap-2">
+                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-3">
+                  <DeployToRenderButton />
                   <a
-                    href="https://github.com/Nutlope/loras-dev"
+                    href={GITHUB_REPO_URL}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Button
                       variant="outline"

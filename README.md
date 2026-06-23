@@ -7,6 +7,12 @@
   An open source real-time AI image generator. Powered by Flux through Together.ai.
 </p>
 
+<p align="center">
+  <a href="https://render.com/deploy?repo=https://github.com/ojusave/loras-dev">
+    <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" />
+  </a>
+</p>
+
 ## Tech stack
 
 - [Flux Dev](https://togetherai.link/together-flux/) from BFL for the image model
